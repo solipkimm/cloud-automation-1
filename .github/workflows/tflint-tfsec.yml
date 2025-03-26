@@ -5,10 +5,15 @@ on:
     branches:
       - "prod"
       - "stag"
+    paths:
+      - "network/*.tf"
+      - "webserver/*.tf"
   pull_request:
     branches:
       - "prod"
-
+    paths:
+      - "network/*.tf"
+      - "webserver/*.tf"
 jobs:
   tflint_tfsec:
     name: Run TFLint & TFSec
