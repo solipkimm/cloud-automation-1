@@ -46,3 +46,9 @@ variable "availability_zones" {
   default     = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
   description = "Availability zones"
 }
+
+variable "region" {
+  type        = string
+  default     = "us-east-1"
+  description = "AWS region"
+}
